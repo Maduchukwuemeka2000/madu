@@ -18,7 +18,7 @@ $testing = new Query($db);
 
 //getting the Id
 $testing->To_Do = isset($_GET['to_do']) ? $_GET['to_do'] : die();
-$time = isset($_GET['time']) ?  new DateTime(str_replace('/' ,'-' , $_GET['time'])) : new DateTime($testing->time);
+$time = isset($_GET['time']) ?  new DateTime(str_replace('/' , '-' , $_GET['time'])) : new DateTime($testing->time);
 $testing->time = $time->format('Y-m-d H:i:s');
 $testing->Create_To_Do( );
 
