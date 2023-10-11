@@ -9,11 +9,8 @@ require_once '../Config/Db.php';
 require_once '../Model/Query.php';
 
 //database connection
-$db = Db::con() ;
+$db = Db::con();
 
 //instantiating CRUD
 $testing = new Query($db);
 echo json_encode($testing->Read());
-//testing the to_do Api
-
-

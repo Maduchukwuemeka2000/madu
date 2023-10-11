@@ -9,11 +9,10 @@ require_once '../Config/Db.php';
 require_once '../Model/Query.php';
 
 //database connection
-$db = Db::con() ;
+$db = Db::con();
 
 //instantiating CRUD
 $testing = new Query($db);
-
 
 //getting the Id
 $testing->id = isset($_GET['id']) ? $_GET['id'] : 0;
@@ -24,6 +23,3 @@ $testing->Delete();
 
 //displying all the items
 echo json_encode($testing->Read());
-
-
-
