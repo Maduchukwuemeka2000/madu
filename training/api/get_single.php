@@ -17,4 +17,4 @@ $testing = new Query($db);
 //getting the Id
 $testing->id = isset($_GET['id']) ? $_GET['id'] : die();
 
-echo json_encode($testing->Read_single());
+echo json_encode($testing->read_single());

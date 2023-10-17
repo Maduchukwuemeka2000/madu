@@ -24,7 +24,7 @@ class Query
     }
 
 //Adding A To_Do Item To The Table
-    public function Create_To_Do()
+    public function create_to_do()
     {
 
         //creating the query for inserting data in your to_do list
@@ -53,7 +53,7 @@ class Query
     }
 
 //Reading The To_Do Table
-    public function Read()
+    public function read()
     {
 
         //creating the query for getting all to_do items
@@ -95,7 +95,7 @@ class Query
     }
 
 //Updating The To_Do Table
-    public function Update()
+    public function update()
     {
 
         //creating the query for updating the database
@@ -125,7 +125,7 @@ class Query
     }
 
 //Deleting From To_Do Table
-    public function Delete()
+    public function delete()
     {
 
         //creating the query for deleting a to_do from the to_do list
@@ -145,7 +145,7 @@ class Query
     }
 
 //Reading A Singel To_Do Table
-    public function Read_single()
+    public function read_single()
     {
 
         //creating the query for getting a single_to_do item from the to_do list
@@ -194,7 +194,7 @@ class Query
         $query = <<< query
     SET @num := 0 ;
     UPDATE $this->table SET ID = @num := (@num + 1);
-    ALTER TABLE $this->table AUTO_INCREMENT =1;
+    ALTER TABLE $this->table AUTO_INCREMENT = 1;
     query;
         $smt = $this->db->prepare($query);
 

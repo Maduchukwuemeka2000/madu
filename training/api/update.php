@@ -24,7 +24,7 @@ $testing->time = $time->format('Y-m-d H:i:s');
 if ($testing->update() == true) {
 
     //displying all items
-    echo json_encode($testing->Read());
+    echo json_encode($testing->read());
 
 }
 echo ($testing->time);

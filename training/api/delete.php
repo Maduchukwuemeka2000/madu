@@ -16,10 +16,10 @@ $testing = new Query($db);
 
 //getting the Id
 $testing->id = isset($_GET['id']) ? $_GET['id'] : 0;
-$testing->to_do = isset($_GET['to_do']) ? $_GET['to_do'] : null;
+$testing->To_Do = isset($_GET['to_do']) ? $_GET['to_do'] : null;
 
 //deleting from database
-$testing->Delete();
+$testing->delete();
 
 //displying all the items
-echo json_encode($testing->Read());
+echo json_encode($testing->read());

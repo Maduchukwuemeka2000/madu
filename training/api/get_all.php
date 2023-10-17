@@ -13,4 +13,4 @@ $db = Db::con();
 
 //instantiating CRUD
 $testing = new Query($db);
-echo json_encode($testing->Read());
+echo json_encode($testing->read());
